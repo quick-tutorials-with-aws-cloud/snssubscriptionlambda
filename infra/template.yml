@@ -53,8 +53,8 @@ Resources:
       Code:
         ZipFile: |
           exports.handler = async (event, context) => {
-            console.log('event', JSON.stringfy('event'));
-            console.log('context', JSON.stringfy('context'));
+            console.log('event', JSON.stringify(event));
+            console.log('context', JSON.stringify('context'));
             context.succeed("Hello, I'm a SNS topic subscriber!");
           };
       Tags:
